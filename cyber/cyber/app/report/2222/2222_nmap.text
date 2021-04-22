@@ -1,0 +1,52 @@
+# Nmap 7.91 scan initiated Sun Apr 18 11:26:30 2021 as: nmap -sV -oN 2222_nmap.text hack.me
+Nmap scan report for hack.me (74.50.111.244)
+Host is up (0.35s latency).
+rDNS record for 74.50.111.244: 74-50-111-244.static.hvvc.us
+Not shown: 996 filtered ports
+PORT      STATE SERVICE   VERSION
+53/tcp    open  domain    Microsoft DNS 6.1.7601 (1DB15F75) (Windows Server 2008 R2 SP1)
+80/tcp    open  upnp      Microsoft IIS httpd
+443/tcp   open  ssl/https
+49156/tcp open  unknown
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.91%T=SSL%I=7%D=4/18%Time=607C178A%P=x86_64-apple-darwin
+SF:19.6.0%r(GetRequest,1CD,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Ty
+SF:pe:\x20text/html;\x20charset=us-ascii\r\nDate:\x20Sun,\x2018\x20Apr\x20
+SF:2021\x2011:27:06\x20GMT\r\nConnection:\x20close\r\nContent-Length:\x203
+SF:15\r\n\r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01
+SF://EN\"\"http://www\.w3\.org/TR/html4/strict\.dtd\">\r\n<HTML><HEAD><TIT
+SF:LE>Not\x20Found</TITLE>\r\n<META\x20HTTP-EQUIV=\"Content-Type\"\x20Cont
+SF:ent=\"text/html;\x20charset=us-ascii\"></HEAD>\r\n<BODY><h2>Not\x20Foun
+SF:d</h2>\r\n<hr><p>HTTP\x20Error\x20404\.\x20The\x20requested\x20resource
+SF:\x20is\x20not\x20found\.</p>\r\n</BODY></HTML>\r\n")%r(HTTPOptions,1CD,
+SF:"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x20text/html;\x20cha
+SF:rset=us-ascii\r\nDate:\x20Sun,\x2018\x20Apr\x202021\x2011:27:07\x20GMT\
+SF:r\nConnection:\x20close\r\nContent-Length:\x20315\r\n\r\n<!DOCTYPE\x20H
+SF:TML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\"http://www\.w3\.
+SF:org/TR/html4/strict\.dtd\">\r\n<HTML><HEAD><TITLE>Not\x20Found</TITLE>\
+SF:r\n<META\x20HTTP-EQUIV=\"Content-Type\"\x20Content=\"text/html;\x20char
+SF:set=us-ascii\"></HEAD>\r\n<BODY><h2>Not\x20Found</h2>\r\n<hr><p>HTTP\x2
+SF:0Error\x20404\.\x20The\x20requested\x20resource\x20is\x20not\x20found\.
+SF:</p>\r\n</BODY></HTML>\r\n")%r(FourOhFourRequest,1CD,"HTTP/1\.1\x20404\
+SF:x20Not\x20Found\r\nContent-Type:\x20text/html;\x20charset=us-ascii\r\nD
+SF:ate:\x20Sun,\x2018\x20Apr\x202021\x2011:27:10\x20GMT\r\nConnection:\x20
+SF:close\r\nContent-Length:\x20315\r\n\r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20\
+SF:"-//W3C//DTD\x20HTML\x204\.01//EN\"\"http://www\.w3\.org/TR/html4/stric
+SF:t\.dtd\">\r\n<HTML><HEAD><TITLE>Not\x20Found</TITLE>\r\n<META\x20HTTP-E
+SF:QUIV=\"Content-Type\"\x20Content=\"text/html;\x20charset=us-ascii\"></H
+SF:EAD>\r\n<BODY><h2>Not\x20Found</h2>\r\n<hr><p>HTTP\x20Error\x20404\.\x2
+SF:0The\x20requested\x20resource\x20is\x20not\x20found\.</p>\r\n</BODY></H
+SF:TML>\r\n")%r(tor-versions,1DA,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:ntent-Type:\x20text/html;\x20charset=us-ascii\r\nDate:\x20Sun,\x2018\x2
+SF:0Apr\x202021\x2011:27:12\x20GMT\r\nConnection:\x20close\r\nContent-Leng
+SF:th:\x20326\r\n\r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\
+SF:x204\.01//EN\"\"http://www\.w3\.org/TR/html4/strict\.dtd\">\r\n<HTML><H
+SF:EAD><TITLE>Bad\x20Request</TITLE>\r\n<META\x20HTTP-EQUIV=\"Content-Type
+SF:\"\x20Content=\"text/html;\x20charset=us-ascii\"></HEAD>\r\n<BODY><h2>B
+SF:ad\x20Request\x20-\x20Invalid\x20Verb</h2>\r\n<hr><p>HTTP\x20Error\x204
+SF:00\.\x20The\x20request\x20verb\x20is\x20invalid\.</p>\r\n</BODY></HTML>
+SF:\r\n");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows_server_2008:r2:sp1
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr 18 11:27:36 2021 -- 1 IP address (1 host up) scanned in 66.18 seconds
